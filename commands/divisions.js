@@ -25,13 +25,13 @@ module.exports = {
                 .setName('add')
                 .setDescription('Add division')
                 .addStringOption(option =>
-                    // https://reddit.com/r/mhocmp/xxxx/xxx...
+                    // https://reddit.com/r/mhocholyroodvote/xxxx/xxx...
                     option.setName('reddit_url').setRequired(true).setDescription('Full Reddit URL of the division'),
                 )
                 .addStringOption(option =>
-                    option.setName('whip').setRequired(true).setDescription('Aye, No, Abs').setChoices(
-                        { name: 'Aye', value: 'aye' },
-                        { name: 'No', value: 'no' },
+                    option.setName('whip').setRequired(true).setDescription('For, Against, Abs').setChoices(
+                        { name: 'For', value: 'for' },
+                        { name: 'Against', value: 'against' },
                         { name: 'Abstain', value: 'abs' },
                         { name: 'Free', value: 'free' },
                     ),
@@ -59,7 +59,7 @@ module.exports = {
         .addSubcommand(subcommand =>
             subcommand
                 .setName('notify')
-                .setDescription('Notify MPs of up to 4 divisions.')
+                .setDescription('Notify MSPs of up to 4 divisions.')
                 .addStringOption(option =>
                     // B1xxx
                     option.setName('division_1').setRequired(true).setDescription('First division ID').setAutocomplete(true),

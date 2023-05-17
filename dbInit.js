@@ -22,9 +22,9 @@ sequelize.sync({ force }).then(async () => {
     const divisions = [
         Divisions.upsert({
             id: 'B000',
-            url: 'https://reddit.com/r/mhocmp',
+            url: 'https://reddit.com/r/MHOCHolyroodVote',
             end_date: moment().tz('Europe/London').add(3, 'days').hour(22).minutes(0).seconds(0),
-            whip: 'aye',
+            whip: 'for',
             line: 1,
         }),
     ];
