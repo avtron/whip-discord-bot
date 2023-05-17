@@ -6,8 +6,8 @@
  */
 const parseVote = (vote) => {
     vote = vote.toLowerCase();
-    if (vote.includes('aye')) return 'aye';
-    if (vote.includes('no')) return 'no';
+    if (vote.includes('for')) return 'for';
+    if (vote.includes('against')) return 'against';
     if (vote.includes('abst')) return 'abs';
     if (vote.startsWith('u/') || vote.startsWith('/u')) return 'proxy';
     return 'N/A';

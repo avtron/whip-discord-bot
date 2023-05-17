@@ -1,6 +1,6 @@
 const { Mps } = require('../dbObjects');
 const { Division } = require('../functions/utils');
-const acceptableWhips = ['aye', 'no', 'abs'];
+const acceptableWhips = ['for', 'against', 'abs'];
 
 /**
  * @param division Division object to be checked
