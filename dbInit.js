@@ -8,7 +8,7 @@ const sequelize = new Sequelize('database', 'username', 'password', {
     storage: 'database.sqlite',
 });
 
-const Mps = require('./models/Mps')(sequelize, Sequelize.DataTypes);
+const Mps = require('./models/mps')(sequelize, Sequelize.DataTypes);
 const Divisions = require('./models/Division')(sequelize, Sequelize.DataTypes);
 
 const force = process.argv.includes('--force') || process.argv.includes('-f');

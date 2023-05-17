@@ -6,7 +6,7 @@ const sequelize = new Sequelize('database', 'username', 'password', {
     logging: false,
     storage: 'database.sqlite',
 });
-const Mps = require('./models/Mps.js')(sequelize, Sequelize.DataTypes);
+const Mps = require('./models/mps.js')(sequelize, Sequelize.DataTypes);
 const force = process.argv.includes('--force') || process.argv.includes('-f');
 
 console.log(`Found ${users.length} MPs`);

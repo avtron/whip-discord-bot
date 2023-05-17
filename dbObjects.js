@@ -17,7 +17,7 @@ const sequelize = new Sequelize('database', 'username', 'password', {
 * @param {Sequelize} Sequelize
 * @returns
 */
-const Mps = require('./models/Mps.js')(sequelize, Sequelize.DataTypes);
+const Mps = require('./models/mps.js')(sequelize, Sequelize.DataTypes);
 
 /**
 * @param {DataTypes} DataTypes

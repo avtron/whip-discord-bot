@@ -19,7 +19,7 @@ module.exports = {
                 .setName(Commands.Division)
                 .setDescription('Checks commons division')
                 .addStringOption(option =>
-                    option.setName('division_id').setRequired(true).setDescription('Division ID (Bxxx)').setAutocomplete(true),
+                    option.setName('division_id').setRequired(true).setDescription('Division ID (SBxxx)').setAutocomplete(true),
                 ))
         .addSubcommand(subcommand =>
             subcommand

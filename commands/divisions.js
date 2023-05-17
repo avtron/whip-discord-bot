@@ -53,8 +53,8 @@ module.exports = {
                 .setName('remove')
                 .setDescription('Remove division')
                 .addStringOption(option =>
-                    // B1xxx
-                    option.setName('division_id').setRequired(true).setDescription('Division ID (Bxxx)').setAutocomplete(true),
+                    // SB1xxx
+                    option.setName('division_id').setRequired(true).setDescription('Division ID (SBxxx)').setAutocomplete(true),
                 ))
         .addSubcommand(subcommand =>
             subcommand
