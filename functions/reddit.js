@@ -26,7 +26,7 @@ async function findDivisionByUrl(url) {
     let division = null;
     try {
         division = new Division(
-            await r.getSubmission(submissionId).fetch().then(s => s.title.split(' - ')[0]),
+            await r.getSubmission(submissionId).fetch().then(s => s.title.split(' | ')[0]),
             await r.getSubmission(submissionId).fetch().then(s => s.url),
             await r.getSubmission(submissionId).fetch().then(s => s.comments.map(c => [c.author.name, parseVote(c.body)])),
         );
