@@ -202,11 +202,11 @@ module.exports = {
 
                     let colour = null;
                     switch (division.whip) {
-                        case 'aye': {
+                        case 'for': {
                             colour = Colors.Green;
                             break;
                         }
-                        case 'no': {
+                        case 'against': {
                             colour = Colors.Red;
                             break;
                         }
